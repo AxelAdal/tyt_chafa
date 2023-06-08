@@ -1,14 +1,15 @@
 .caja {
+    text-align: center;
+    max-width: 400px;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    background-color: #f8f8f8;
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 10px;
-    margin-bottom: 20px;
-    background-color: #f8f8f8;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
   }
   
   @media (max-width: 500px) {
@@ -16,3 +17,21 @@
       max-width: 90%;
     }
   }
+/*-------------------------------------------*/
+.forma{
+    will-change: auto;
+    height: 8rem;
+    background-color: aquamarine;
+}
+.forma img{
+    margin-top: 4rem;
+    margin-left: 2rem;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 5rem;
+}
+.forma2{
+    will-change: auto;
+    height: 8rem;
+    background-color: rgb(255, 255, 255);
+}
