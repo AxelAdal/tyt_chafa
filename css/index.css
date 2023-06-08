@@ -29,9 +29,58 @@
     width: 8rem;
     height: 8rem;
     border-radius: 5rem;
+
 }
 .forma2{
     will-change: auto;
-    height: 8rem;
-    background-color: rgb(255, 255, 255);
+    height: 4rem;
+
+    display: flex;
+    flex-direction: row;
+}
+.btn{
+    background-color: black;
+    height: 2rem;
+    width: 2rem;
+    margin-top: 0.5rem;
+    margin-left: auto;
+
+    border-radius: 5rem;
+}
+.btn2{
+    background-color: black;
+    height: 2rem;
+    width: 4rem;
+    margin-top: 0.5rem;
+    margin-left: 2rem;
+
+    border-radius: 1rem;
+}
+.btn3{
+    background-color: black;
+    height: 2rem;
+    width: 4rem;
+    margin-top: 0.5rem;
+    margin-left: 1.5rem;
+    border-radius: 0.5rem;
+}
+.btn3 p{
+    font-size: 0.5;
+    text-align: center;
+    margin-top: 0.25rem;
+    color: red;
+}
+.nombre{
+    height: 4rem;
+    background-color: blue;
+}
+.nombre h2{
+    font-size: 2rem;
+    margin-left: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.nombre p{
+    font-size: 1rem;
+    margin-left: 1rem;
+    font-family: 'Courier New', Courier, monospace;
 }
