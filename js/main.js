@@ -1,22 +1,26 @@
 /*Api twiter*/
 fetch('https://jsonplaceholder.typicode.com/posts')
 .then(response => response.json())
-.then(data => {
-  var contenedor = document.getElementById('contenedor');
+.then(posts => {
+  const postsContainer = document.getElementById('contenedor');
 
-  data.forEach(post => {
-    var div = document.createElement('div');
+  // Creamos cada elemento para el HTML 
+  posts.forEach(post => {
+    const postElement = document.createElement('div');
+    postElement.classList.add('caja');
 
-    var title = document.createElement('h3');
-    title.textContent = post.title;
-    div.appendChild(title);
+    const titleElement = document.createElement('h2');
+    titleElement.textContent = post.title;
 
-    var body = document.createElement('p');
-    body.textContent = 'Body: ' + post.body;
-    div.appendChild(body);
+    const contentElement = document.createElement('p');
+    contentElement.textContent = post.body;
 
-    contenedor.appendChild(div);
+    postElement.appendChild(titleElement);
+    postElement.appendChild(contentElement);
+
+    contenedor.appendChild(postElement);
   });
 })
 .catch(error => {
+  console.error('Error al obtener los posts:', error);
 });
